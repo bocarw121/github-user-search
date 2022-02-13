@@ -33,5 +33,6 @@ export const useTheme = () => {
         light.mainCard.mainUsername,
       ),
     },
+    spaceMonoFont: themes.SpaceMonoFont,
   };
 };
