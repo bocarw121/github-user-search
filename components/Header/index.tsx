@@ -3,7 +3,7 @@ import React from 'react';
 import { useTheme } from '../../hooks/useTheme';
 import DarkModeToggle from './DarkModeToggle';
 
-const Header: React.FC = () => {
+export const Header: React.FC = () => {
   const { header, spaceMonoFont } = useTheme();
   return (
     <Flex
@@ -26,5 +26,3 @@ const Header: React.FC = () => {
     </Flex>
   );
 };
-
-export default Header;

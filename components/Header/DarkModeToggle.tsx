@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useTheme } from '../../hooks/useTheme';
 import { MoonIcon, SunIcon } from './icons';
 
-const DarkModeToggle: React.FC = () => {
+export const DarkModeToggle: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
   const { header, spaceMonoFont } = useTheme();
