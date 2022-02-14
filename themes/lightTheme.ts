@@ -7,7 +7,7 @@ export const LightTheme = {
   },
   input: {
     bg: '#FFFFFF',
-    placeholder: '#4B6A9B',
+    text: '#4B6A9B',
     icon: '#0079FF',
     message: '#F74646',
   },

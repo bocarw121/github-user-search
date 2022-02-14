@@ -13,10 +13,7 @@ export const useTheme = () => {
     },
     searchBar: {
       bg: useColorModeValue(dark.input.bg, light.input.bg),
-      placeHolder: useColorModeValue(
-        dark.input.placeholder,
-        light.input.placeholder,
-      ),
+      inputText: useColorModeValue(dark.input.text, light.input.text),
       icon: useColorModeValue(dark.input.icon, light.input.icon),
       message: useColorModeValue(dark.input.message, light.input.message),
     },

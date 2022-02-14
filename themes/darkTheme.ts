@@ -7,7 +7,7 @@ export const DarkTheme = {
   },
   input: {
     bg: '#1E2A47',
-    placeholder: '#FFFFFF',
+    text: '#FFFFFF',
     icon: '#0079FF',
     message: '#F74646',
   },
