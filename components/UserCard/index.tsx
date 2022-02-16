@@ -1,4 +1,4 @@
-import { Grid, GridItem, Image, Text } from '@chakra-ui/react';
+import { GridItem, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 import moment from 'moment';
 import { useUserContext } from '../../context';
@@ -6,17 +6,14 @@ import { useTheme } from '../../hooks/useTheme';
 import { LinksArea } from './LinksArea';
 import { StatsArea } from './StatsArea';
 import { UserInfo } from './UserInfo';
-import { breakPoints, GridAreas } from '../../themes/breakPoints';
 import { UserCardWrapper } from './UserCardWrapper';
 
 export const UserCard = () => {
-  const { mainCard, spaceMonoFont } = useTheme();
+  const { mainCard } = useTheme();
   const { userData } = useUserContext();
-  const { containerWidth } = breakPoints;
-  const { userCard } = GridAreas;
+
   return (
     <UserCardWrapper>
-      {/* Image 1*/}
       <GridItem margin="48px 37px 0px 0px" gridArea="avatar">
         <Image
           src={userData.avatar_url}
@@ -30,12 +27,12 @@ export const UserCard = () => {
         />
       </GridItem>
 
-      {/* Name and UserName 1*/}
+      {/* Name and UserName */}
       <GridItem gridArea="name">
         <UserInfo userData={userData} />
       </GridItem>
 
-      {/* Date 1*/}
+      {/* Date */}
       <GridItem
         gridArea="date"
         color={mainCard.lighterText}
@@ -50,6 +47,7 @@ export const UserCard = () => {
         </Text>
       </GridItem>
 
+      {/* Bio */}
       <GridItem gridArea="bio">
         <Text
           as="p"
@@ -67,7 +65,7 @@ export const UserCard = () => {
         </Text>
       </GridItem>
 
-      {/* Stats 2*/}
+      {/* Stats */}
       <GridItem
         gridArea="stats"
         border="1px solid transparent"
@@ -78,7 +76,7 @@ export const UserCard = () => {
         <StatsArea userData={userData} />
       </GridItem>
 
-      {/* links 3*/}
+      {/* links */}
       <GridItem gridArea="links" marginTop="37px">
         <LinksArea userData={userData} />
       </GridItem>
