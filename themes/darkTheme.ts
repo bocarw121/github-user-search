@@ -14,11 +14,14 @@ export const DarkTheme = {
   button: {
     normal: '#0079FF',
     active: '#60ABFF',
+    text: '#FFFFFF',
   },
   mainCard: {
     bg: '#1E2A47',
     icons: '#FFFFFF',
-    mainUsername: '#FFFFFF',
     text: '#FFFFFF',
+    userName: '#0079FF',
+    statsBg: '#141D2F',
+    statsIcon: '#FFFFFF',
   },
 };

@@ -3,7 +3,7 @@ import { InputData, UserContextType } from '../types';
 
 export const UserContext = createContext<UserContextType>({
   userData: {
-    avatar_url: '',
+    avatar_url: 'https://avatars.githubusercontent.com/u/9919?v=4',
     bio: null,
     blog: 'https://github.blog',
     company: null,

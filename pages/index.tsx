@@ -11,7 +11,13 @@ const Home: NextPage = () => {
   return (
     <Box height="100vh" width="100vw" bgColor={mainBackground}>
       <Flex justify="center">
-        <Box marginTop="144px">
+        <Box
+          marginTop={{
+            base: '31px',
+            md: '140px',
+            lg: '144px',
+          }}
+        >
           <Header />
           <SearchBar />
           <UserCard />

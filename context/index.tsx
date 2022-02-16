@@ -3,22 +3,22 @@ import { InputData, UserDataType } from '../types';
 import { UserContext } from './UserContext';
 
 const InitialState: UserDataType = {
-  avatar_url: '',
+  avatar_url: 'https://avatars.githubusercontent.com/u/583231?v=4',
   bio: null,
-  blog: '',
-  company: null,
-  created_at: '',
+  blog: 'https://github.blog',
+  company: '@github',
+  created_at: '2011-01-25T18:44:36Z',
   email: null,
-  followers: 0,
-  following: 0,
-  html_url: '',
-  location: '',
-  login: '',
-  name: '',
-  organizations_url: '',
-  public_repos: 0,
+  followers: 4912,
+  following: 9,
+  html_url: 'https://github.com/octocat',
+  location: 'San Francisco',
+  login: 'octocat',
+  name: 'The Octocat',
+  organizations_url: 'https://api.github.com/users/octocat/orgs',
+  public_repos: 8,
   twitter_username: null,
-  url: '',
+  url: 'https://api.github.com/users/octocat/orgs',
 };
 
 export const UserProvider: React.FC = ({ children }) => {

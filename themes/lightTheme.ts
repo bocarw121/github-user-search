@@ -14,14 +14,17 @@ export const LightTheme = {
   button: {
     normal: '#0079FF',
     active: '#60ABFF',
+    text: '#FFFFFF',
   },
   mainCard: {
     bg: '#FFFFFF',
     icons: '#4B6A9B',
-    mainUsername: '#2B3442',
     text: {
       light: '#697C9A',
       dark: '#2B3442',
     },
+    userName: '#0079FF',
+    statsBg: '#F6F8FF',
+    statsIcon: '#4B6A9B',
   },
 };

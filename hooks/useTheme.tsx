@@ -20,14 +20,27 @@ export const useTheme = () => {
     button: {
       bg: useColorModeValue(dark.button.normal, light.button.normal),
       activeBg: useColorModeValue(dark.button.active, light.button.active),
+      text: useColorModeValue(dark.button.text, light.button.text),
     },
     mainCard: {
       bg: useColorModeValue(dark.mainCard.bg, light.mainCard.bg),
       icons: useColorModeValue(dark.mainCard.icons, light.mainCard.icons),
-      text: useColorModeValue(dark.mainCard.text, light.mainCard.text),
+      lighterText: useColorModeValue(
+        dark.mainCard.text,
+        light.mainCard.text.light,
+      ),
+      darkerText: useColorModeValue(
+        dark.mainCard.text,
+        light.mainCard.text.dark,
+      ),
       userName: useColorModeValue(
-        dark.mainCard.mainUsername,
-        light.mainCard.mainUsername,
+        dark.mainCard.userName,
+        light.mainCard.userName,
+      ),
+      statsBg: useColorModeValue(dark.mainCard.statsBg, light.mainCard.statsBg),
+      statsIcon: useColorModeValue(
+        dark.mainCard.statsIcon,
+        light.mainCard.statsIcon,
       ),
     },
     spaceMonoFont: themes.SpaceMonoFont,
