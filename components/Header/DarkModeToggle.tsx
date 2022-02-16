@@ -1,7 +1,7 @@
 import { Box, Flex, Text, useColorMode, Image } from '@chakra-ui/react';
 import { useState } from 'react';
 import { useTheme } from '../../hooks/useTheme';
-import { MoonIcon, SunIcon } from './icons';
+import { MoonIcon, SunIcon } from '../Icons';
 
 export const DarkModeToggle: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -21,18 +21,19 @@ export const DarkModeToggle: React.FC = () => {
         fontSize={13}
         fontFamily={spaceMonoFont}
         fontWeight="bold"
+        letterSpacing="2.5px"
       >
-        {colorMode === 'light' ? 'Light' : 'Dark'}
+        {colorMode === 'light' ? 'LIGHT' : 'DARK'}
       </Text>
       <Box onClick={toggleColorMode}>
         {colorMode === 'light' ? (
-          <MoonIcon
+          <SunIcon
             color={isHovered ? header.toggleActive : header.toggle}
             handleMouseEnter={handleMouseEnter}
             handleMouseLeave={handleMouseLeave}
           />
         ) : (
-          <SunIcon
+          <MoonIcon
             color={isHovered ? header.toggleActive : header.toggle}
             handleMouseEnter={handleMouseEnter}
             handleMouseLeave={handleMouseLeave}
