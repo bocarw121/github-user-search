@@ -32,19 +32,18 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://github-user-search-one.vercel.app/)
+- Live Site URL: [Github User Search](https://github-user-search-one.vercel.app/)
 
 ### Built with
 
-- Next JS
-- Typescript
-- Chakra UI
-- react-hook-form
+- [Next.js](https://nextjs.org/) - React framework
+- [Typescript](https://www.typescriptlang.org/)
+- [Chackra-UI](https://chakra-ui.com/) - For styles
+- [react-hook-form](https://www.react-hook-form.com/)
 - Flexbox
 - CSS Grid
 
-- [Next.js](https://nextjs.org/) - React framework
-- [Chackra-UI](https://chakra-ui.com/) - For styles
+
 
 ## Author
 
